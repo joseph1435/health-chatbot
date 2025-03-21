@@ -3,26 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Health Assistant 🤖🩺</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <title>HealthMate – Your Virtual Health Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
-  <div class="chat-container">
-    <header class="chat-header">
-      <h1>Health Assistant 🩺</h1>
-      <p>Ask me anything health-related 💬</p>
-    </header>
+  <header class="navbar">
+    <div class="logo">🩺 HealthMate</div>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#chat">Chatbot</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="chat-box" id="chat-box">
-      <div class="bot-message">👋 Hello! I'm your virtual Health Assistant. How can I support your well-being today?</div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Personal Health Assistant</h1>
+      <p>Get instant, professional medical guidance—anytime, anywhere.</p>
+      <a href="#chat" class="cta-button">💬 Start Chatting</a>
     </div>
+    <div class="hero-image">
+      <img src="images/healthcare-bot.svg" alt="Healthcare Assistant">
+    </div>
+  </section>
 
-    <form id="chat-form" autocomplete="off">
-      <input type="text" id="user-input" placeholder="Type your question..." required />
-      <button type="submit">Send</button>
-    </form>
-  </div>
+  <section class="features" id="features">
+    <h2>How HealthMate Helps You</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>🧠 Smart Responses</h3>
+        <p>Powered by NLP to provide relevant and accurate medical info.</p>
+      </div>
+      <div class="card">
+        <h3>⏱️ 24/7 Access</h3>
+        <p>Get help anytime you need it—right from your browser.</p>
+      </div>
+      <div class="card">
+        <h3>🔒 Private & Secure</h3>
+        <p>Your questions and answers stay between you and HealthMate.</p>
+      </div>
+    </div>
+  </section>
 
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <section class="chatbot" id="chat">
+    <h2>Talk to HealthMate</h2>
+    <div class="chat-container">
+      <div class="chat-box" id="chat-box"></div>
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your question..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Need More Help?</h2>
+    <p>Contact our medical team at <a href="mailto:support@healthmate.ai">support@healthmate.ai</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HealthMate. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
