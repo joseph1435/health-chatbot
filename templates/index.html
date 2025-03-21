@@ -3,71 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HealthMate – Your Virtual Health Assistant</title>
+  <title>Digital Health Assistant</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">🩺 HealthMate</div>
-    <nav>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#chat">Chatbot</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
+  <!-- Hero Section -->
+  <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Your Personal Health Assistant</h1>
-      <p>Get instant, professional medical guidance—anytime, anywhere.</p>
-      <a href="#chat" class="cta-button">💬 Start Chatting</a>
-    </div>
-    <div class="hero-image">
-      <img src="images/healthcare-bot.svg" alt="Healthcare Assistant">
+      <h1>Welcome to Digital Health Assistant 👩‍⚕️</h1>
+      <p>Your AI-powered health support system, available 24/7 for care and advice.</p>
+      <a href="#contact" class="btn-primary">Get in Touch</a>
     </div>
   </section>
 
-  <section class="features" id="features">
-    <h2>How HealthMate Helps You</h2>
-    <div class="feature-cards">
-      <div class="card">
-        <h3>🧠 Smart Responses</h3>
-        <p>Powered by NLP to provide relevant and accurate medical info.</p>
-      </div>
-      <div class="card">
-        <h3>⏱️ 24/7 Access</h3>
-        <p>Get help anytime you need it—right from your browser.</p>
-      </div>
-      <div class="card">
-        <h3>🔒 Private & Secure</h3>
-        <p>Your questions and answers stay between you and HealthMate.</p>
-      </div>
-    </div>
-  </section>
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">AI-powered, fast and secure support</p>
 
-  <section class="chatbot" id="chat">
-    <h2>Talk to HealthMate</h2>
-    <div class="chat-container">
-      <div class="chat-box" id="chat-box"></div>
-      <div class="chat-input">
-        <input type="text" id="user-input" placeholder="Type your question..." />
-        <button onclick="sendMessage()">Send</button>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" alt="Chatbot" />
+          <h3>Virtual Health Chat</h3>
+          <p>Talk with our AI assistant for instant help with symptoms and advice.</p>
+        </div>
+
+        <div class="service-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/484/484662.png" alt="Monitoring" />
+          <h3>Health Monitoring</h3>
+          <p>Track your vitals and conditions easily through our smart platform.</p>
+        </div>
+
+        <div class="service-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Reminders" />
+          <h3>Medication Reminders</h3>
+          <p>Get personalized alerts to stay on track with your medications.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section class="contact" id="contact">
-    <h2>Need More Help?</h2>
-    <p>Contact our medical team at <a href="mailto:support@healthmate.ai">support@healthmate.ai</a></p>
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">Have a question or need help? Reach out to us!</p>
+
+      <div class="contact-wrapper">
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><strong>Email:</strong> support@digitalclinic.ai</p>
+          <p><strong>Phone:</strong> +234 901 825 8090</p>
+          <p><strong>Location:</strong> Lagos, Nigeria</p>
+          <p><strong>Follow us:</strong></p>
+          <div class="social-links">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 HealthMate. All rights reserved.</p>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Digital Health Assistant. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
