@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+import os
 
 app = Flask(__name__)
 
@@ -8,13 +9,21 @@ def index():
 
 @app.route("/chat", methods=["POST"])
 def chat():
-    user_input = request.json.get("message")
-    # Dummy logic for now
-    if "headache" in user_input.lower():
-        response = "Try drinking water and resting. If it persists, see a doctor."
+    user_input = request.json.get("message", "")
+    response = get_bot_response(user_input)
+    return jsonify({"reply": response})
+
+def get_bot_response(message):
+    message = message.lower()
+    if "hello" in message or "hi" in message:
+        return "Hello! How can I assist you with your health today?"
+    elif "headache" in message:
+        return "Sorry to hear that! Have you had enough rest and water? You might also take a mild pain reliever."
+    elif "thank you" in message:
+        return "You're welcome! Stay healthy 😊"
     else:
-        response = "I'm a basic bot for now. Try asking about headaches!"
-    return jsonify({"response": response})
+        return "I'm not sure how to respond to that. Could you please rephrase?"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Use Render’s PORT environment variable
+    app.run(host="0.0.0.0", port=port, debug=True)
