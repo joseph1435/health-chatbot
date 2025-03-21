@@ -1,175 +1,111 @@
-/* Base Reset */
+/* Reset and base styles */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4faff;
-  color: #1f2f56;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
   line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-/* Navbar */
-.navbar {
-  background: #e8f3fc;
-  padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #d3e2f1;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #0077b6;
-}
-
-.navbar ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #1f2f56;
-  font-weight: 500;
-}
-
-.navbar a:hover {
-  color: #0077b6;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4rem 2rem;
-  background: #cfe9fd;
-}
-
-.hero-content {
-  flex: 1 1 50%;
-}
-
-.hero-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-  color: #003f72;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.cta-button {
+header {
   background-color: #0077b6;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #005b91;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Features */
-.features {
-  padding: 4rem 2rem;
-  background: #f4faff;
+  color: #fff;
+  padding: 1rem 2rem;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.features h2 {
-  margin-bottom: 2rem;
+header h1 {
   font-size: 2rem;
-  color: #003f72;
 }
 
-.feature-cards {
+main {
+  flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
-}
-
-.card {
-  background: white;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.08);
-  flex: 1 1 250px;
-  max-width: 300px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #0077b6;
-}
-
-/* Chatbot Section */
-.chatbot {
-  padding: 4rem 2rem;
-  background: #e6f4fe;
-  text-align: center;
-}
-
-.chatbot h2 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: #003f72;
 }
 
 .chat-container {
-  max-width: 700px;
-  margin: 0 auto;
-  background: white;
-  padding: 1.5rem;
+  background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 119, 182, 0.1);
-}
-
-.chat-box {
-  height: 300px;
-  overflow-y: auto;
-  padding: 1rem;
-  border: 1px solid #cfe9fd;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  background: #f9fdff;
-  text-align: left;
-}
-
-.chat-input {
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.chat-input input {
+#chat-box {
   flex: 1;
-  padding
+  padding: 1rem;
+  overflow-y: auto;
+  height: 400px;
+  border-bottom: 1px solid #eee;
+  background-color: #f9fcff;
+}
+
+.message {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.bot {
+  color: #0077b6;
+}
+
+.user {
+  text-align: right;
+  color: #1f2f56;
+}
+
+.typing em {
+  font-style: italic;
+  color: #888;
+}
+
+.input-area {
+  display: flex;
+  padding: 1rem;
+  background-color: #f4faff;
+  gap: 0.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f8a;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
