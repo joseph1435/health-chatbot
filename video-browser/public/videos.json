@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to TypeScript",
+    "description": "Learn the basics of TypeScript and how it enhances JavaScript development with static typing and modern features.",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/ahCwqrYpIuM",
+    "duration": "12:45",
+    "genre": "Programming"
+  },
+  {
+    "id": 2,
+    "title": "React Hooks Explained",
+    "description": "Deep dive into React Hooks - useState, useEffect, and custom hooks to build powerful React applications.",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/TNhaISOUy6Q",
+    "duration": "18:30",
+    "genre": "Programming"
+  },
+  {
+    "id": 3,
+    "title": "CSS Grid Layout Tutorial",
+    "description": "Master CSS Grid Layout with practical examples and learn how to create responsive web layouts effortlessly.",
+    "thumbnail": "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/EFafSYg-PkI",
+    "duration": "15:20",
+    "genre": "Web Design"
+  },
+  {
+    "id": 4,
+    "title": "Node.js Best Practices",
+    "description": "Discover the best practices for building scalable and maintainable Node.js applications in production.",
+    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/bl9cSX9Qt6A",
+    "duration": "22:15",
+    "genre": "Backend"
+  },
+  {
+    "id": 5,
+    "title": "Understanding REST APIs",
+    "description": "Learn how to design and implement RESTful APIs following industry standards and best practices.",
+    "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/Q-BpqyOT3a8",
+    "duration": "16:40",
+    "genre": "Backend"
+  },
+  {
+    "id": 6,
+    "title": "Modern JavaScript ES6+",
+    "description": "Explore modern JavaScript features including arrow functions, destructuring, promises, and async/await.",
+    "thumbnail": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/NCwa_xi0Uuc",
+    "duration": "20:05",
+    "genre": "Programming"
+  },
+  {
+    "id": 7,
+    "title": "Responsive Web Design",
+    "description": "Create beautiful, mobile-friendly websites that work perfectly on all devices using responsive design principles.",
+    "thumbnail": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/srvUrASNj0s",
+    "duration": "14:25",
+    "genre": "Web Design"
+  },
+  {
+    "id": 8,
+    "title": "Git and GitHub Basics",
+    "description": "Master version control with Git and learn how to collaborate effectively using GitHub.",
+    "thumbnail": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/RGOj5yH7evk",
+    "duration": "19:50",
+    "genre": "Tools"
+  },
+  {
+    "id": 9,
+    "title": "TailwindCSS Quick Start",
+    "description": "Get started with TailwindCSS and build beautiful interfaces quickly with utility-first CSS framework.",
+    "thumbnail": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/pfaSUYaSgRo",
+    "duration": "17:35",
+    "genre": "Web Design"
+  },
+  {
+    "id": 10,
+    "title": "MongoDB Fundamentals",
+    "description": "Learn MongoDB basics, CRUD operations, and how to work with NoSQL databases effectively.",
+    "thumbnail": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/ofme2o29ngU",
+    "duration": "21:10",
+    "genre": "Database"
+  },
+  {
+    "id": 11,
+    "title": "Docker for Beginners",
+    "description": "Containerize your applications with Docker and learn the fundamentals of container technology.",
+    "thumbnail": "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/fqMOX6JJhGo",
+    "duration": "25:00",
+    "genre": "DevOps"
+  },
+  {
+    "id": 12,
+    "title": "SQL Query Optimization",
+    "description": "Improve database performance with advanced SQL query optimization techniques and indexing strategies.",
+    "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=225&fit=crop",
+    "videoUrl": "https://www.youtube.com/embed/BHwzDmr6d7s",
+    "duration": "23:45",
+    "genre": "Database"
+  }
+]
